@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-3" *ngFor="let gifs of trendingGifs">
+            <a>
+                <div class="card mt-5">
+                    <div class="card-img-top">
+                        <img [src]="gifs.images.preview_gif.url" style="height:240px" alt="Card image cap">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h4 class="card-title">{{gifs.title}}</h4>
+                                <small>
+                                    <p>
+                                        {{gifs.trending_datetime}}
+                                    </p>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</div>
